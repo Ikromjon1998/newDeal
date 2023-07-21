@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pipedrive CRM Test Task - Job Form</title>
+</head>
+<body>
+  <h2>Job Form</h2>
+  <form id="jobForm">
+    <!-- Client details section -->
+    <h3>Client details:</h3>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <!-- Job details section -->
+    <h3>Job details:</h3>
+    <label for="jobType">Job type:</label>
+    <select id="jobType" required>
+      <option value="">Select job type</option>
+      <option value="type1">Type 1</option>
+      <option value="type2">Type 2</option>
+      <!-- Add more job type options here -->
+    </select>
+
+    <label for="jobSource">Job source:</label>
+    <select id="jobSource" required>
+      <option value="">Select job source</option>
+      <option value="source1">Source 1</option>
+      <option value="source2">Source 2</option>
+      <!-- Add more job source options here -->
+    </select>
+
+    <label for="jobDescription">Job description:</label>
+    <textarea id="jobDescription"></textarea>
+
+    <!-- Service location section -->
+    <h3>Service location:</h3>
+    <label for="address">Address:</label>
+    <input type="text" id="address" required>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" required>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" required>
+
+    <label for="zipCode">Zip Code:</label>
+    <input type="text" id="zipCode" required>
+
+    <label for="area">Area:</label>
+    <select id="area" required>
+      <option value="">Select area</option>
+      <option value="area1">Area 1</option>
+      <option value="area2">Area 2</option>
+      <!-- Add more area options here -->
+    </select>
+
+    <!-- Scheduled section -->
+    <h3>Scheduled:</h3>
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" required>
+
+    <label for="startTime">Start time:</label>
+    <input type="time" id="startTime" required>
+
+    <label for="endTime">End time:</label>
+    <input type="time" id="endTime" required>
+
+    <label for="testSelect">Test select:</label>
+    <select id="testSelect" required>
+      <option value="">Select test</option>
+      <option value="test1">Test 1</option>
+      <option value="test2">Test 2</option>
+      <!-- Add more test options here -->
+    </select>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Main script -->
+  <script src="iframe.js"></script>
+</body>
+</html>
