@@ -1,95 +1,98 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pipedrive CRM Test Task - Job Form</title>
+  <title>Job Form</title>
+  <!-- Add Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <h2>Job Form</h2>
-  <form id="jobForm">
-    <!-- Client details section -->
-    <h3>Client details:</h3>
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" required>
+  <div class="container">
+    <h2 class="my-4">Job Form</h2>
+    <form id="jobForm">
+      <div class="form-group">
+        <h3>Client details:</h3>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" class="form-control" required>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" class="form-control" required>
 
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" class="form-control" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" required>
+      </div>
 
-    <!-- Job details section -->
-    <h3>Job details:</h3>
-    <label for="jobType">Job type:</label>
-    <select id="jobType" required>
-      <option value="">Select job type</option>
-      <option value="type1">Type 1</option>
-      <option value="type2">Type 2</option>
-      <!-- Add more job type options here -->
-    </select>
+      <div class="form-group">
+        <h3>Job details:</h3>
+        <label for="jobType">Job type:</label>
+        <select id="jobType" class="form-control" required>
+          <option value="">Select job type</option>
+          <option value="type1">Type 1</option>
+          <option value="type2">Type 2</option>
+        </select>
 
-    <label for="jobSource">Job source:</label>
-    <select id="jobSource" required>
-      <option value="">Select job source</option>
-      <option value="source1">Source 1</option>
-      <option value="source2">Source 2</option>
-      <!-- Add more job source options here -->
-    </select>
+        <label for="jobSource">Job source:</label>
+        <select id="jobSource" class="form-control" required>
+          <option value="">Select job source</option>
+          <option value="source1">Source 1</option>
+          <option value="source2">Source 2</option>
+        </select>
 
-    <label for="jobDescription">Job description:</label>
-    <textarea id="jobDescription"></textarea>
+        <label for="jobDescription">Job description:</label>
+        <textarea id="jobDescription" class="form-control"></textarea>
+      </div>
 
-    <!-- Service location section -->
-    <h3>Service location:</h3>
-    <label for="address">Address:</label>
-    <input type="text" id="address" required>
+      <div class="form-group">
+        <h3>Service location:</h3>
+        <label for="address">Address:</label>
+        <input type="text" id="address" class="form-control" required>
 
-    <label for="city">City:</label>
-    <input type="text" id="city" required>
+        <label for="city">City:</label>
+        <input type="text" id="city" class="form-control" required>
 
-    <label for="state">State:</label>
-    <input type="text" id="state" required>
+        <label for="state">State:</label>
+        <input type="text" id="state" class="form-control" required>
 
-    <label for="zipCode">Zip Code:</label>
-    <input type="text" id="zipCode" required>
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" class="form-control" required>
 
-    <label for="area">Area:</label>
-    <select id="area" required>
-      <option value="">Select area</option>
-      <option value="area1">Area 1</option>
-      <option value="area2">Area 2</option>
-      <!-- Add more area options here -->
-    </select>
+        <label for="area">Area:</label>
+        <select id="area" class="form-control" required>
+          <option value="">Select area</option>
+          <option value="area1">Area 1</option>
+          <option value="area2">Area 2</option>
+        </select>
+      </div>
 
-    <!-- Scheduled section -->
-    <h3>Scheduled:</h3>
-    <label for="startDate">Start Date:</label>
-    <input type="date" id="startDate" required>
+      <div class="form-group">
+        <h3>Scheduled:</h3>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" class="form-control" required>
 
-    <label for="startTime">Start time:</label>
-    <input type="time" id="startTime" required>
+        <label for="startTime">Start time:</label>
+        <input type="time" id="startTime" class="form-control" required>
 
-    <label for="endTime">End time:</label>
-    <input type="time" id="endTime" required>
+        <label for="endTime">End time:</label>
+        <input type="time" id="endTime" class="form-control" required>
 
-    <label for="testSelect">Test select:</label>
-    <select id="testSelect" required>
-      <option value="">Select test</option>
-      <option value="test1">Test 1</option>
-      <option value="test2">Test 2</option>
-      <!-- Add more test options here -->
-    </select>
+        <label for="testSelect">Test select:</label>
+        <select id="testSelect" class="form-control" required>
+          <option value="">Select test</option>
+          <option value="test1">Test 1</option>
+          <option value="test2">Test 2</option>
+        </select>
+      </div>
 
-    <!-- Submit button -->
-    <button type="submit">Submit</button>
-  </form>
-
-  <!-- Main script -->
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
   <script src="iframe.js"></script>
+  
+  <!-- Add Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
