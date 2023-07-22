@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 // Function to handle form submission
 function handleSubmit(event) {
@@ -41,21 +42,7 @@ function handleSubmit(event) {
     testSelect,
   };
 
-
-  fetch('https://api.pipedrive.com/v1/deals', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log('Deal created in Pipedrive:', data);
-    })
-    .catch((error) => {
-      console.error('Error creating deal:', error);
-    });
+  console.log(formData);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
